@@ -8,15 +8,22 @@ public class SingDuckSong {
         int newNumberDucksReturn = 0;
         String moreThanOneDuck = " little ducks ";
         String oneDuckOnly = " little duck ";
+        String pluralCorrection = "";
         String restOfSong = "went swimming one day\nOver the hill and far away\nMother duck said, \"Quack quack quack quack\"";
-        String ducksReturnEnding = " ";
+        String ducksReturnEnding = "";
 
-        if (noOfDucksReturn > 0) {
-            newNumberDucksReturn = noOfDucksReturn - 1;
-            ducksReturnEnding = newNumberDucksReturn + "";
+        if (noOfDucksReturn == 1) {
+            pluralCorrection = oneDuckOnly;
+        } else if (noOfDucksReturn > 1) {
+            pluralCorrection = moreThanOneDuck;
         }
 
-        System.out.println(noOfDucksReturn + moreThanOneDuck + restOfSong + newNumberDucksReturn + ducksReturnEnding);
+        if (noOfDucksReturn > 1) {
+            newNumberDucksReturn = noOfDucksReturn - 1;
+            ducksReturnEnding = "\nAnd only " + newNumberDucksReturn + pluralCorrection + "came back!";
+        }
+
+        System.out.println(noOfDucksReturn + pluralCorrection + restOfSong + ducksReturnEnding);
     }
 
     public static void main(String args[]) {
