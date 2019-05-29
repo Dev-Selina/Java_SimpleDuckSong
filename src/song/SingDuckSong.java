@@ -3,28 +3,31 @@ package song;
 public class SingDuckSong {
 
     private void songLyrics() {
+        int beginNoDucks = 5;
 
-        int noOfDucksReturn = 5;
-        int newNumberDucksReturn = 0;
         String moreThanOneDuck = " little ducks ";
         String oneDuckOnly = " little duck ";
-        String pluralCorrection = "";
+
         String restOfSong = "went swimming one day\nOver the hill and far away\nMother duck said, \"Quack quack quack quack\"";
         String ducksReturnEnding = "";
 
-        if (noOfDucksReturn == 1) {
-            pluralCorrection = oneDuckOnly;
-        } else if (noOfDucksReturn > 1) {
-            pluralCorrection = moreThanOneDuck;
-        }
+        System.out.println(beginNoDucks + moreThanOneDuck + restOfSong);
+        int endNoDucks = 0;
+//        duckNumCheck(endNoDucks,beginNoDucks);
+        endNoDucks = beginNoDucks - 1;
 
-        if (noOfDucksReturn > 1) {
-            newNumberDucksReturn = noOfDucksReturn - 1;
-            ducksReturnEnding = "\nAnd only " + newNumberDucksReturn + pluralCorrection + "came back!";
-        }
+        ducksReturnEnding = "And only " + endNoDucks + moreThanOneDuck + "came paddling back!";
 
-        System.out.println(noOfDucksReturn + pluralCorrection + restOfSong + ducksReturnEnding);
+        System.out.println(ducksReturnEnding + "\n");
+        beginNoDucks = beginNoDucks--;
+
     }
+
+//    private void duckNumCheck(int endNoDucks, int beginNoDucks) {
+//        if (endNoDucks != 0) {
+//            endNoDucks = beginNoDucks--;
+//        }
+//    }
 
     public static void main(String args[]) {
         SingDuckSong play = new SingDuckSong();
