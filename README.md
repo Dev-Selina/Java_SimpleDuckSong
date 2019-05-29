@@ -5,8 +5,8 @@
 </p>
 
 ### Five Little Ducks
-<i>
-5 little ducks went swimming one day <br>
+
+<p><i>5 little ducks went swimming one day <br>
 Over the hill and far away <br>
 Mother duck said, “Quack quack quack quack” <br>
 And only 4 little ducks came back!
