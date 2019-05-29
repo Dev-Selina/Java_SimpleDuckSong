@@ -9,25 +9,21 @@ public class SingDuckSong {
         String oneDuckOnly = " little duck ";
 
         String restOfSong = "went swimming one day\nOver the hill and far away\nMother duck said, \"Quack quack quack quack\"";
-        String ducksReturnEnding = "";
+        String ducksReturnEnding;
 
-        System.out.println(beginNoDucks + moreThanOneDuck + restOfSong);
-        int endNoDucks = 0;
-//        duckNumCheck(endNoDucks,beginNoDucks);
-        endNoDucks = beginNoDucks - 1;
+        while(beginNoDucks > 1) {
+            System.out.println(beginNoDucks + moreThanOneDuck + restOfSong);
+            int endNoDucks;
 
-        ducksReturnEnding = "And only " + endNoDucks + moreThanOneDuck + "came paddling back!";
+            endNoDucks = beginNoDucks - 1;
 
-        System.out.println(ducksReturnEnding + "\n");
-        beginNoDucks = beginNoDucks--;
+            ducksReturnEnding = "And only " + endNoDucks + moreThanOneDuck + "came paddling back!";
 
+            System.out.println(ducksReturnEnding + "\n");
+
+            beginNoDucks = beginNoDucks - 1;
+        }
     }
-
-//    private void duckNumCheck(int endNoDucks, int beginNoDucks) {
-//        if (endNoDucks != 0) {
-//            endNoDucks = beginNoDucks--;
-//        }
-//    }
 
     public static void main(String args[]) {
         SingDuckSong play = new SingDuckSong();
