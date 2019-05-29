@@ -13,6 +13,7 @@ public class SingDuckSong {
 
         while(beginNoDucks > 1) {
             System.out.println(beginNoDucks + moreThanOneDuck + restOfSong);
+
             int endNoDucks;
 
             endNoDucks = beginNoDucks - 1;
@@ -25,6 +26,13 @@ public class SingDuckSong {
             System.out.println(ducksReturnEnding + "\n");
 
             beginNoDucks = beginNoDucks - 1;
+        }
+
+        if(beginNoDucks == 1){
+            int endNoDucks = 5;
+            System.out.println(beginNoDucks + oneDuckOnly + restOfSong);
+            ducksReturnEnding = "And all her " + endNoDucks + moreThanOneDuck + "came paddling back!";
+            System.out.println(ducksReturnEnding + "\n");
         }
     }
 
