@@ -16,9 +16,12 @@ public class SingDuckSong {
             int endNoDucks;
 
             endNoDucks = beginNoDucks - 1;
-
-            ducksReturnEnding = "And only " + endNoDucks + moreThanOneDuck + "came paddling back!";
-
+            if (endNoDucks == 1){
+                ducksReturnEnding = "And only " + endNoDucks + oneDuckOnly + "came paddling back!";
+            }
+            else {
+                ducksReturnEnding = "And only " + endNoDucks + moreThanOneDuck + "came paddling back!";
+            }
             System.out.println(ducksReturnEnding + "\n");
 
             beginNoDucks = beginNoDucks - 1;
